@@ -32,7 +32,7 @@ Diseñamos y desarrollamos una **plataforma web propietaria, independiente y end
 
 
 ## Estructura del Proyecto
-
+```text
 adventureworks-fullstack-data-platform/
 │
 ├── config.py                 # Centralización de credenciales y variables de entorno
@@ -55,7 +55,7 @@ adventureworks-fullstack-data-platform/
 │   └── artifacts/            # Modelos serializados (.pkl / ONNX) para producción
 │
 └── templates/ & static/      # Frontend, estilos CSS y componentes interactivos Plotly
-
+``` 
 
 ## Flujo Metodológico de Implementación
 #### Fase 1 a 3: Ingesta, Calidad y Capa de Extracción
