@@ -16,19 +16,11 @@ AdventureWorks Inc. gestionaba su inteligencia de negocio a través de una suite
 ### Nuestra Solución:
 Diseñamos y desarrollamos una **plataforma web propietaria, independiente y end-to-end** que migró la infraestructura y transformó los reportes rígidos del pasado en un motor analítico y predictivo centralizado de código abierto.
 
+![Migración entre plataformas](images/migracion.png)
 
 ## Arquitectura del Sistema
 
-[ SQL Server (OLTP) ] ──(Vistas de Extracción & Anonimización)──► [ Python Migration Script ]
-│
-┌──────────────────────────────────────────────────────────────────────────┘
-▼
-[ PostgreSQL (OLAP) ] ──► [ Pipeline ETL (Parquet / Logs / Control) ]
-│
-├─► [ Flask Backend ] ◄──► [ ML Inference Engine (Prophet / XGBoost / ONNX) ]
-│         │
-│         ▼
-└─► [ Frontend UI ] ──► Dashboards Interactivos (Plotly) ──► [ Producción: Nginx + Gunicorn + Docker ]
+![Arquitectura](images/pipeline.png)
 
 
 ## 🛠️ Core Tecnológico (Tech Stack)
