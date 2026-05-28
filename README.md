@@ -58,22 +58,22 @@ adventureworks-fullstack-data-platform/
 ``` 
 
 ## Flujo Metodológico de Implementación
-#### Fase 1 a 3: Ingesta, Calidad y Capa de Extracción
+### Fase 1 a 3: Ingesta, Calidad y Capa de Extracción
 Auditoría mediante scripts SQL individuales para verificar duplicados, rangos y nulos en las 18 tablas operacionales.
 
 Creación de vistas en SQL Server para pre-estructurar datos, aplicar políticas de anonimización de clientes y delegar el cómputo pesado inicial al motor de base de datos.
 
-#### Fase 4 y 5: Migración Heterogénea y ETL en Python
+### Fase 4 y 5: Migración Heterogénea y ETL en Python
 Mapeo dinámico de esquemas entre SQL Server y PostgreSQL mediante SQLAlchemy.
 
 Scripting modular (etl_pipeline.py) con control de calidad estricto (CheckData) y almacenamiento intermedio en archivos Parquet para optimizar rendimiento. Generación de logs automatizados y archivo de trazabilidad datasets_control.xlsx.
 
-#### Fase 6 y 7: Optimización y Backend Analítico
+### Fase 6 y 7: Optimización y Backend Analítico
 Modelado lógico en PostgreSQL con vistas enriquecidas e indexadas para consolidar Sales, HR, Supply Chain y Product Performance.
 
 Construcción del Backend en Flask utilizando Blueprints para independizar la lógica de cada departamento del negocio.
 
-#### Fase 8 a 10: Analítica Predictiva, UI y MLOps
+### Fase 8 a 10: Analítica Predictiva, UI y MLOps
 Implementación de modelos de Machine Learning en producción: Forecasting de ventas (Prophet) y Clasificación de Churn (XGBoost).
 
 Reemplazo de la suite rígida tradicional por dashboards interactivos con Plotly.
